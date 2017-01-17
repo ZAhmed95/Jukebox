@@ -1,0 +1,123 @@
+body{
+  background-color: lightblue;
+}
+
+.spotifySearch{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.visual{
+  height: 400px;
+  width: 800px;
+  text-align: center;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, 0);
+}
+
+.progressBar{
+  height: 30px;
+  width: 100%;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.progress{
+  height: 100%;
+  width: 0%;
+  background-color: blue;
+}
+
+.playlistItem{
+  width: 300px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.playlistItem:hover{
+  color: blue;
+}
+
+.playlistItem:active{
+  color: red;
+}
+
+.controls{
+  position: fixed;
+  height: 100px;
+  margin: 0 auto;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.controlButton{
+  width: 100px;
+  height: 100px;
+  margin: 0px 20px;
+  float: left;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.controlButton:hover{
+  background-size: cover;
+}
+
+#previous{
+  background-image: url('images/previous.png');
+}
+
+#play{
+  background-image: url('images/play.png');
+}
+
+#pause{
+  background-image: url('images/pause.png');
+}
+
+#stop{
+  background-image: url('images/stop.png');
+}
+
+#random{
+  background-image: url('images/dice.png');
+}
+
+#next{
+  background-image: url('images/next.png');
+}
+
+#volumeUp{
+  background-image: url('images/volumeup.png');
+}
+
+#volumeDown{
+  background-image: url('images/volumedown.png');
+}
+
+#volumeDiv{
+  float: left;
+  height: 100px;
+  width: 400px;
+  cursor: pointer;
+}
+
+#volumeBar{
+  width: 100%;
+  height: 10px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-color: gray;
+}
+
+#volumeLevel{
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}

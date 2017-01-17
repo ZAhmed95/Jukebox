@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    
+  <head>
+      
+    <meta charset="utf-8">
+      
+    <title>Jukebox</title>
+      
+    <link rel="stylesheet" href="normalize.css">
+      
+    <link rel="stylesheet" href="styles.css">
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+      
+    <script src="script.js" charset="utf-8"></script>
+      
+  </head>
+    
+  <body>
+    <!-- search bar to query spotify for tracks -->
+    <div class="spotifySearch">
+        <form class="searchForm" action="javascript:void(0)" method="get">
+          <input type="text" name="search" placeholder="search Spotify" id="search">
+        </form>
+        <h3 class="noResults"></h3>
+    </div>
+      
+    <p class="dndInfo">Or, drag and drop your favorite music files from your computer!</p>
+    <!-- visuals for current song, i.e. song poster, title, performer, progress bar, etc -->
+    <div class="visual">
+      <h1 id="title">Current Song: Turkish March</h1>
+      <h2 id="artist">Artist - Mozart</h2>
+
+        <div id="poster">
+            <div id="albumImage"></div>
+            
+            <!-- progress bar -->
+            <div class="progressBar" title="progress bar">
+                <div class="progress"></div>
+            </div>
+        </div><!--#poster-->
+
+        <!-- controls for the jukebox, i.e. play, pause, stop, shuffle, loop, queue, etc -->
+        <div class="controls">
+
+              <!-- previous song button -->
+              <div class="controlButton" id="previous" title="Previous song"></div>
+
+              <!-- play button -->
+              <div class="controlButton" id="play" title="Play"></div>
+
+              <!-- stop button -->
+              <div class="controlButton" id="stop" title="Stop"></div>
+
+              <!-- random song button -->
+              <div class="controlButton" id="random" title="Random song"></div>
+
+              <!-- next song button -->
+              <div class="controlButton" id="next" title="Next song"></div>
+
+              <!-- volume down button -->
+              <div class="controlButton" id="volumeDown" title="Decrease volume"></div>
+
+            
+              <!-- volume bar -->
+              <div id="volumeDiv" title="Volume">
+
+                <div id="volumeBar">
+
+                  <div id="volumeLevel"></div>
+                </div>
+              </div>
+            
+              <!-- volume up button -->
+              <div class="controlButton" id="volumeUp" title="Increase volume"></div>
+
+        </div><!--.controls-->
+    </div><!--.visual-->
+      
+    <div class="playlist">
+      <div id="autoplay" title="Autoplay"></div>
+      <h1>Playlist:</h1>
+      <p class="playlistItem">Mozart - Turkish March</p>
+      <p class="playlistItem">Beethoven - Fur Elise</p>
+      <p class="playlistItem">Beethoven - Moonlight Sonata</p>
+    </div>
+
+  </body>
+</html>
